@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-[#010103];
+}
+
+a {
+  @apply text-white;
+}
+
+.num {
+  @apply text-accent;
+}
+
+.project-right {
+  grid-column: 1 / 8;
+  grid-area: 1 / 6 / -1 / -1;
+}
+
+.project-left {
+  grid-column: 7 / -1;
+  grid-area: 1 / 1 / -1 / 7;
+}
