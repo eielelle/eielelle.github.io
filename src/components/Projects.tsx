@@ -19,19 +19,23 @@ function Projects() {
             img={item.img}
             tags={item.tags}
             reverse={(index + 1) % 2 == 0}
+            ghLink={item.ghLink}
+            deployLink={item.deployLink}
           />
         ))}
 
         <h3 className="text-center text-2xl text-accent font-semibold my-8">
           Other Noteworthy Projects
         </h3>
-        <div className="grid grid-cols-3 grid-rows-2 gap-4">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 lg:grid-rows-2 md:grid-rows-3 gap-4">
           {projects.map((item, index) => (
             <ProjectCard
               key={index}
               title={item.title}
               description={item.description}
               tags={item.tags}
+              ghLink={item.ghLink}
+              deployLink={item.deployLink}
             />
           ))}
         </div>

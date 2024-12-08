@@ -6,18 +6,31 @@ function About() {
       id="about"
       className="flex justify-center items-center min-h-screen"
     >
-      <div className="grid grid-cols-2 gap-8">
+      <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8">
         <div>
           <Divider number={"01"} title={"About Me"} />
           <p>
-            Hello! My name is Eleazar, and I enjoy creating things that live on the internet. My journey in web development started back in 2019 as a hobby. It turns out that hobby quickly turned into passion as I learned HTML, CSS, and JavaScript. Over the years, I've honed my skills in front-end and back-end technologies, building everything from simple websites to more complex web applications.
+            Hello! My name is Eleazar, and I enjoy creating things that live on
+            the internet. My journey in web development started back in 2019 as
+            a hobby. It turns out that hobby quickly turned into passion as I
+            learned HTML, CSS, and JavaScript. Over the years, I've honed my
+            skills in front-end and back-end technologies, building everything
+            from simple websites to more complex web applications.
           </p>
           <br />
           <p>
-          I recently graduated with my Bachelor of Science in Information Technology (BSIT), and I'm excited to continue my learning and growth in the tech field. I'm passionate about exploring new technologies and staying updated with the latest trends in web development.
+            I recently graduated with my Bachelor of Science in Information
+            Technology (BSIT), and I'm excited to continue my learning and
+            growth in the tech field. I'm passionate about exploring new
+            technologies and staying updated with the latest trends in web
+            development.
           </p>
           <br />
-          <p>In my spare time, you can find me working on personal projects, reading, listening to JPop, hanging out with my friends, or running around Hyrule searching for Korok seeds.</p>
+          <p>
+            In my spare time, you can find me working on personal projects,
+            reading, listening to JPop, hanging out with my friends, or running
+            around Hyrule searching for Korok seeds.
+          </p>
         </div>
 
         <div>
@@ -60,6 +73,6 @@ function About() {
       </div>
     </section>
   );
-  }
+}
 
 export default About;

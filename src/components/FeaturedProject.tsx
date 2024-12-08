@@ -23,19 +23,19 @@ function FeaturedProject({
         <img src={img} alt="gradify-web" className="w-full" />
       </div>
 
-      <div className={`project-${reverse ? 'left' : 'right'} ${reverse ? 'text-left' : 'text-right'}`}>
+      <div className={`project-${reverse ? 'left' : 'right'} ${reverse ? 'text-left' : 'text-right'} sm:text-black md:text-white`}>
         <span className="text-accent text-lg">Featured Project</span>
         <h2 className="text-4xl font-semibold mb-8">{title}</h2>
-        <p className="bg-white text-black p-4">{description}</p>
-        <p className={`my-5 flex gap-4 ${reverse ? 'justify-start' : 'justify-end'}`}>
+        <p className="md:bg-transparent md:bg-white text-black p-4">{description}</p>
+        <p className={`my-5 flex gap-4 ${reverse ? 'md:justify-start' : 'md:justify-end'} sm:justify-center`}>
           {tags.map((item, index) => (
             <span key={index}>{item}</span>
           ))}
         </p>
 
-        <div className="flex justify-end items-center gap-4">
+        <div className={`flex ${reverse ? 'justify-start' : 'justify-end'} items-center gap-4`}>
           {ghLink && (
-            <a href="">
+            <a href={ghLink as string}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -53,7 +53,7 @@ function FeaturedProject({
             </a>
           )}
           {deployLink && (
-            <a href={""}>
+            <a href={deployLink as string}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
