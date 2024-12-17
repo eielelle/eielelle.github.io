@@ -28,7 +28,7 @@ export const featured = [
       "A desktop-based library management system designed to manage books for our college library. It features an authentication system for students, allowing them to access book management, issue, and return functionalities. The system also provides the ability to issue library cards to students, which can be scanned using the computer's camera to check the books borrowed by each student.",
     tags: ["C#", "QR"],
     img: lmsImage,
-    ghLink: "",
+    ghLink: "https://github.com/eielelle/LibraryManagementSystemWF",
     deployLink: "",
   },
 ];
@@ -72,5 +72,13 @@ export const projects = [
     tags: ["C#"],
     ghLink: "https://github.com/eielelle/calculator-plus",
     deployLink: "",
+  },
+  {
+    title: "Portfolio",
+    description:
+      "My personal portfolio",
+    tags: ["React", "Tailwind"],
+    ghLink: "https://github.com/eielelle/eielelle.github.io",
+    deployLink: "https://eielelle.github.io",
   },
 ];
