@@ -90,7 +90,10 @@ function Navbar() {
                 </a>
               </li>
               <li className="item">
-                <a href="" className="btn border-accent border p-3">
+                <a
+                  href="/Eleazar_Romero_Resume.pdf"
+                  className="btn border-accent border p-3"
+                >
                   Resume
                 </a>
               </li>
@@ -118,7 +121,7 @@ function Navbar() {
               </a>
             </li>
             <li className="item">
-              <a href="" className="btn border-accent border p-3">
+              <a href="/Eleazar_Romero_Resume.pdf" className="btn border-accent border p-3">
                 Resume
               </a>
             </li>
