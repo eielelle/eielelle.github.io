@@ -2,8 +2,18 @@
 import gradifyWebImage from "./assets/gradify-web.png";
 import gradifyMobileImage from "./assets/gradify-mobile.png";
 import lmsImage from "./assets/lms.png";
+import pepetoonsImage from "./assets/pepetoons.png";
 
 export const featured = [
+  {
+    title: "Pepetoons Animation Website",
+    description:
+      "A creative web platform developed during my internship with the Philippine National Police - Information Technology Management Service (PNP-ITMS), designed to showcase animated content focused on Philippine history—particularly the life and works of Dr. José Rizal. The project supports educational initiatives by combining interactive design with historical storytelling.",
+    tags: ["NextJS", "ThreeJS"],
+    img: pepetoonsImage,
+    ghLink: "https://github.com/eielelle/pepetoons-animations",
+    deployLink: "https://pepetoons-animations.vercel.app/",
+  },
   {
     title: "Gradify: Image-Based Examination Grade Checker with Web Monitoring",
     description:
@@ -75,8 +85,7 @@ export const projects = [
   },
   {
     title: "Portfolio",
-    description:
-      "My personal portfolio",
+    description: "My personal portfolio",
     tags: ["React", "Tailwind"],
     ghLink: "https://github.com/eielelle/eielelle.github.io",
     deployLink: "https://eielelle.github.io",
