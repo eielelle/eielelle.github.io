@@ -19,21 +19,37 @@ function FeaturedProject({
 }: FeaturedProjectProps) {
   return (
     <div className="grid grid-cols-12 grid-rows-1 mb-24">
-      <div className={`project-${!reverse ? 'left' : 'right'} flex items-center`}>
+      <div
+        className={`project-${!reverse ? "left" : "right"} flex items-center`}
+      >
         <img src={img} alt="gradify-web" className="w-full" />
       </div>
 
-      <div className={`project-${reverse ? 'left' : 'right'} ${reverse ? 'text-left' : 'text-right'} text-black md:text-white`}>
+      <div
+        className={`project-${reverse ? "left" : "right"} ${
+          reverse ? "text-left" : "text-right"
+        } text-black md:text-white`}
+      >
         <span className="text-accent text-lg">Featured Project</span>
-        <h2 className="text-4xl font-semibold mb-8">{title}</h2>
-        <p className="md:bg-transparent md:bg-white text-black p-4">{description}</p>
-        <p className={`my-5 flex gap-4 ${reverse ? 'md:justify-start' : 'md:justify-end'} justify-center`}>
+        <h2 className="text-4xl font-semibold mb-8 bg-accent p-2">{title}</h2>
+        <p className="md:bg-transparent md:bg-white text-black p-4">
+          {description}
+        </p>
+        <p
+          className={`my-5 flex gap-4 ${
+            reverse ? "md:justify-start" : "md:justify-end"
+          } justify-center`}
+        >
           {tags.map((item, index) => (
             <span key={index}>{item}</span>
           ))}
         </p>
 
-        <div className={`flex ${reverse ? 'md:justify-start' : 'md:justify-end'} justify-center items-center gap-4`}>
+        <div
+          className={`flex ${
+            reverse ? "md:justify-start" : "md:justify-end"
+          } justify-center items-center gap-4`}
+        >
           {ghLink && (
             <a href={ghLink as string}>
               <svg
